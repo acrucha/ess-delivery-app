@@ -1,16 +1,25 @@
-.logo-container img {
-    width: 60vh;
+.grid-all {
+    display: flex;
+    align-items: center;
+    margin: 2rem;
 }
 
-.logo-container, .image-container {
-    text-align: center;
+.grid-container {
+    display: flex;
+    margin: 0;
+}
+
+.logo-container img {
+    width: 30vh;
+    cursor: pointer;
+}
+
+.logo-container {
+    text-align: initial;
     align-self: center;
     margin-bottom: 0;
 }
 
-.image-container img {
-    width: 50vh; 
-}
 
 h2 {
     font-weight: 500;
@@ -23,8 +32,10 @@ h2 {
 
 .buttons-container {
     display: flex;
+    align-items: center;
     justify-content: center;
-    margin: 2rem 0;
+
+    margin-left: 8rem;
 }
 
 
@@ -57,7 +68,7 @@ h2 {
     height: 8.4rem;
 
     border-radius: 0.8rem; /* arredonda as bordas da caixa */
-    margin-right: 1.6rem;
+    margin: 1rem;
 
     font: 700 2.4rem 'DM Sans';
 
@@ -87,7 +98,6 @@ h2 {
 
 .buttons-container a.rest-link {
     background: var(--color-primary-dark);
-    margin-right: 0;
 }
 
 .buttons-container a.rest-link:hover {
@@ -122,13 +132,22 @@ h2 {
     margin-right: 1.1rem;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     :root {
         font-size: 40%;
     }
 
-    .logo-container img,
-    .image-container img {
+    .grid-all {
+        display: grid;
+    }
+
+    .grid-container {
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+    }
+
+    .logo-container img {
         width: 35rem;
     }
 
@@ -144,11 +163,8 @@ h2 {
 }
 
 /* serve para indicar que tudo que está aqui dentro somente deverá ser aplicado se a largura minima da tela for 1100px */
-@media (min-width: 900px){   
+@media (min-width: 1000px){   
 
-    .grid-container {
-        display: flex;
-    }
 
     .image-container, 
     .logo-container {
@@ -157,7 +173,6 @@ h2 {
 
     .buttons-container {
         justify-content: center; /*vai se comunicar com display flex do button-container antigo e vai sobreescrever o justify */
-        margin: 3rem;
     }
 
 }

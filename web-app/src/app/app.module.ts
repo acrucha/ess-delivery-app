@@ -9,12 +9,14 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CarsComponent } from './cars/cars.component';
 import { CarService } from './cars/cars.service';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    CarsComponent
+    CarsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +25,19 @@ import { CarService } from './cars/cars.service';
     HttpModule,
     RouterModule.forRoot([
       {
-        path: 'cars',
+        path: 'adm',
+        component: CarsComponent
+      },
+      {
+        path: 'cliente',
+        component: CarsComponent
+      },
+      {
+        path: '',
+        component: HomeComponent
+      },
+      {
+        path: 'restaurante',
         component: CarsComponent
       }
     ])
