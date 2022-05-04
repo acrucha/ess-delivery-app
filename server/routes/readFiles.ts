@@ -1,24 +1,13 @@
 import * as fs from 'fs';
 
-import { PromotionService } from './promotion-service';
-import { UserService } from './user-service';
-import { restaurant } from './restaurants';
-import { Admin } from './users';
+import { PromotionService } from '../src/services/promotion-service';
+import { UserService } from '../src/services/user-service';
+import { restaurant } from '../src/interfaces/restaurants';
 export var restaurants: restaurant[] = [];
 
 export function readFiles(adminService: PromotionService, usersService: UserService, restaurantsService: PromotionService[]) : [PromotionService, UserService, PromotionService[]] {
-    // Lendo dos arquivos
-    /*fs.readFile("admin.json", "utf-8", (err,data)=> {
-        if(err){
-            console.log(err);
-        }
-        else{
-            admins = JSON.parse(data);
-            console.log(admins);
-        }
-    })*/
 
-    fs.readFile("admin-coupons.json", "utf-8", (err, data) => {
+    fs.readFile("./data/admin-coupons.json", "utf-8", (err, data) => {
         if(err){
             console.log(err);
         }else{
@@ -26,7 +15,7 @@ export function readFiles(adminService: PromotionService, usersService: UserServ
         }
     })
   
-    fs.readFile("users.json", "utf-8", (err, data) => {
+    fs.readFile("./data/users.json", "utf-8", (err, data) => {
         if(err){
             console.log(err);
         }else{
@@ -34,7 +23,7 @@ export function readFiles(adminService: PromotionService, usersService: UserServ
         }
     })
   
-    fs.readFile("restaurants-coupons.json", "utf-8", (err, data) => {
+    fs.readFile("./data/restaurants-coupons.json", "utf-8", (err, data) => {
         if(err){
             console.log(err);
         }else{

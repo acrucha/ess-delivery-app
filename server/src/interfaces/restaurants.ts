@@ -1,4 +1,4 @@
-import { Coupon } from "./coupon";
+import { Coupon } from "../classes/coupon";
 
 export interface product {
     name: string; 

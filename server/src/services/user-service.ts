@@ -1,5 +1,5 @@
-import { User , Order} from "./users";
-import { Coupon } from "./coupon";
+import { User , Order} from "../interfaces/users";
+import { Coupon } from "../classes/coupon";
 import crypto = require('crypto');
 import * as fs from 'fs';
 

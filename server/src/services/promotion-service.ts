@@ -1,8 +1,8 @@
-import { Coupon } from "./coupon";
+import { Coupon } from "../classes/coupon";
 
 import crypto = require('crypto');
 
-import { restaurants } from "./readFiles"; 
+import { restaurants } from "../../routes/readFiles"; 
 
 import * as fs from 'fs';
 

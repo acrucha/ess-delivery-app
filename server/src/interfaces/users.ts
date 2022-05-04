@@ -1,7 +1,7 @@
-import { Coupon } from "./coupon";
+import { Coupon } from "../classes/coupon";
 import { product } from "./restaurants";
 
-import { PaymentMethod } from "./payment-method";
+import { PaymentMethod } from "../classes/payment-method";
 
 export interface Order {
     id: string;

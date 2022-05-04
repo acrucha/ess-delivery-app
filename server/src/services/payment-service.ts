@@ -1,4 +1,4 @@
-import { PaymentMethod } from "./payment-method";
+import { PaymentMethod } from "../classes/payment-method";
 
 export class PaymentMethodService {
  

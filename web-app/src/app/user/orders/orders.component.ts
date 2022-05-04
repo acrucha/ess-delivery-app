@@ -3,10 +3,10 @@ import { Http } from '@angular/http';
 import { MatTable } from '@angular/material/table';
 import { Router } from '@angular/router';
 // import { User } from 'src/app/admin/user';
-import { User } from "../../../../../server/src/users"
+import { User } from '../../../../../server/src/interfaces/users';
 import { EmailService } from 'src/app/email/email.service';
 import { LocalStorageService } from 'src/app/local-storage.service';
-import { order, Order } from './order';
+import { Order } from './order';
 import generateOrderReceipt from '../../../../../utils/generate_order_receipt'
 
 
