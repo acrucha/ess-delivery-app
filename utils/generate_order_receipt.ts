@@ -1,6 +1,6 @@
 // import { User } from "../web-app/src/app/admin/user"
 import { User } from "../server/src/interfaces/users"
-import { Order } from "../web-app/src/app/user/orders/order"
+import { Order } from "../web-app/src/app/features/user/orders/order"
 
 export default function generateOrderReceipt(user: User, order: Order) {
 
