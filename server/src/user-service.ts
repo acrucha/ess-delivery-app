@@ -56,7 +56,7 @@ export class UserService {
     var userIndex = this.getUserIndex(userId);
     // verificar se o cupom já foi utilizado pelo usuário anteriormente
     var couponIndex = this.users[userIndex].orders
-                          .findIndex(o => {if(o.coupon){ o.coupon.id == coupon.id }});  
+                          .findIndex(o => {if(o.coupon.id != ""){ o.coupon.id == coupon.id }});  
 
     if (order.amount < coupon.minValue) {
       return "O valor mínimo não foi atingido";

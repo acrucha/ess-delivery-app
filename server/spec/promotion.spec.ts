@@ -283,7 +283,9 @@ describe("O servidor", () => {
 			amount: 42,
 			restaurant: "Mequi",
 			address: "Avenida Tales de Mileto, 13, Barro",
-			// podia ter coupon tb
+			coupon: {
+				id: ""
+			}
 		};
 
 		const options: any = {
@@ -352,6 +354,9 @@ describe("O servidor", () => {
 						quantity: 1
 					}
 				],
+				coupon: {
+					id: ""
+				},
 				amount: 42,
 				restaurant: "Mequi"
 			}
