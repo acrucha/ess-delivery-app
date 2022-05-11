@@ -1,6 +1,6 @@
 import "jasmine";
 import request = require("request-promise");
-import { Coupon } from "../src/coupon";
+//import { Coupon } from "../../src/coupon";
 
 const baseUrl = "http://localhost:3000";
 
@@ -13,7 +13,7 @@ describe("O servidor", () => {
 	var server: any;
 
 	beforeAll(() => {
-		server = require("../server");
+		server = require("../../server");
 	});
 
 	afterAll(() => {
@@ -319,7 +319,10 @@ describe("O servidor", () => {
 					}
 				],
 				amount: 51,
-				restaurant: "Mequi"
+				restaurant: "Mequi",
+				coupon: {
+					id: ""
+				}
 			}
 		}
 
