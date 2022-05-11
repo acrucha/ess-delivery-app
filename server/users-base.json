@@ -74,7 +74,8 @@
         "id": "5e9551e1",
         "address": "Av. Boa Viagem, 123, Boa Viagem",
         "email": "matheus@ess.com",
-        "orders": []
+        "orders": [],
+        "paymentMethods": []
     },
     {
         "name": "Zenio",
@@ -116,7 +117,16 @@
                 ],
                 "amount": 42,
                 "restaurant": "Mequi",
-                "address": "Avenida Tales de Mileto, 13, Barro"
+                "address": "Avenida Tales de Mileto, 13, Barro",
+                "coupon": {
+                    "id": "",
+                    "name": "",
+                    "adm": false,
+                    "minValue": 0,
+                    "product": "",
+                    "discount": 0,
+                    "status": ""
+                }
             }
         ],
         "coupons": []

@@ -14,9 +14,9 @@ describe("O servidor", () => {
 		server = require("../../server");
 	});
 
-	afterAll(() => {
-		server.closeServer();
-	});
+	// afterAll(() => {
+	// 	server.closeServer();
+	// });
 
 
 
